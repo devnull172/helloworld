@@ -8,8 +8,8 @@ app = Flask(__name__)
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'hellO222!',  # MySQL root password
-    'database': 'name_db'
+    'password': 'MySecurePass123',  # MySQL root password
+    'database': ''
 }
 
 def get_db_connection():

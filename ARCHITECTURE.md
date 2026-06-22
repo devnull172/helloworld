@@ -36,7 +36,8 @@ This document describes the architecture, components, and data flow of the Name 
 │  ├──────────────────────────┤                                    │
 │  │ id (PK, Auto-Increment)  │                                    │
 │  │ name (VARCHAR, UNIQUE)   │                                    │
-│  │ created_at (TIMESTAMP)   │                                    │
+│  │ created_at (TIMESTAMP)
+   │                                    │
 │  └──────────────────────────┘                                    │
 │                                                                   │
 │  Data: 10 sample names                                           │

@@ -8,13 +8,15 @@ Prerequisites:
 - Update DB_CONFIG with your MySQL credentials
 """
 
+import os
 import mysql.connector
 from mysql.connector import Error
 
+# Read DB credentials from environment variables for flexibility
 DB_CONFIG = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'MySecurePass123',  # MySQL root password
+    'host': os.getenv('DB_HOST', 'localhost'),
+    'user': os.getenv('DB_USER', 'root'),
+    'password': os.getenv('DB_PASS', ''),  # default empty (may use socket auth)
 }
 
 # Sample names to insert
